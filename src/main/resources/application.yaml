@@ -1,0 +1,11 @@
+app:
+  init:
+    enabled: true
+    source-file: ./init.txt
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        shell: INFO
+

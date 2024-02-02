@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfiguration.EnableAutoconfiguration=\
+org.arjunaoverdrive.studentmanagement.config.AppConfiguration
+org.springframework.boot.env.EnvironmentPostProcessor=\
+org.arjunaoverdrive.studentmanagement.config.analyzer.PropertyGuardEnvironmentPostProcessor
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+org.arjunaoverdrive.studentmanagement.config.analyzer.StudentManagementPropertiesAnalyzer
