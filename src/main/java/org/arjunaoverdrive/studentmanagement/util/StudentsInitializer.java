@@ -36,11 +36,17 @@ public class StudentsInitializer {
 
 
     public void initStudents() {
-        List<String> sourceFIleContent = readSourceFileContent();
+        List<String> sourceFileContent;
+        try {
+            sourceFileContent = readSourceFileContent();
+        }catch (RuntimeException re){
+            log.warn(re.getMessage());
+            return;
+        }
         log.info("Reading file...");
 
         List<Student> students = new ArrayList<>();
-        for (String s : sourceFIleContent) {
+        for (String s : sourceFileContent) {
             convertLineToStudent(s, students);
         }
         service.addAllStudents(students);

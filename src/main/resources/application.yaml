@@ -1,7 +1,7 @@
 app:
   init:
     enabled: true
-    source-file: ./init.txt
+    source-file: ${SOURCE_FILE_PATH:./init.txt}
 logging:
   level:
     root: INFO

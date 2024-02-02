@@ -2,7 +2,7 @@
 Spring Boot console app to manage students.
 
 ## Technologies used
-Java 17, Spring Boot v 3.2.2, Spring Shell, Gradle, Docker
+Java 17, Spring Boot v 3.2.2, Spring Shell, Gradle, Docker.
 
 ### Prerequisites
 Java 17 or Docker to run the app in a container.
@@ -33,7 +33,11 @@ Java 17 or Docker to run the app in a container.
 It is possible to import students entries from a file. 
 For this, prepare a file (text or csv) with students' data. Each student entry should start from a new line; 
 fields should be comma-separated; the order of fields:firstname,lastname,age.
-Place the file to the `\src\main\java\recources` folder and specify the path to the file in the 
-`\src\main\java\recources\application.yaml` file as the value of the `source-file` setting. Make sure the `enabled` 
-setting is set to `true`. 
-This should be done before running the `.\gradlew build` command.
+Place the file to the `\src\main\java\recources` folder and specify the file name in the 
+`\src\main\java\recources\application.yaml` file as the value of the `source-file` setting (default is set to 
+`./init.txt`). Make sure the `enabled` setting is set to `true`.
+This should be done before running the `./gradlew build` command. 
+
+It's also possible to use a file from another location. For this, when running the Docker container specify the 
+`SOURCE_FILE_PATH` parameter as a value of the `-e` option, e.g.,
+`docker run --rm -it -e SOURCE_FILE_PATH=/data.txt student-management`.
