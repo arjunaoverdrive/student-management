@@ -12,7 +12,7 @@ Java 17 or Docker to run the app in a container.
 1. Clone the project repository.
 2. Open a terminal/CLI and navigate to the project folder.
 3. Run `./gradlew build`.
-4. As a result, it'll build the application, and place the resulting artefact (jar file) in the .\build\libs folder.
+4. As a result, it'll build the application, and place the resulting artefact (jar file) in the ./build/libs folder.
 5. Run `java -jar ./build/libs/student-management-0.0.1-SNAPSHOT.jar`.
 
 #### Docker
