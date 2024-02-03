@@ -17,7 +17,7 @@ Java 17 or Docker to run the app in a container.
 
 #### Docker
 1. Clone the project repository.
-2. Open a terminal/CLI and navigate to the project folder.
+2. Open terminal/CLI and navigate to the project folder.
 3. Run `./gradlew build`.
 4. Run `docker build -t student-management .` to build an image.
 5. Run `docker run --rm -it student-management` to run a container with the application.
