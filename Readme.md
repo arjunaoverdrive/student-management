@@ -32,7 +32,7 @@ Java 17 or Docker to run the app in a container.
 #### Importing students
 It is possible to import student entries from a file. 
 For this, prepare a file (text or csv) with students' data. Each student entry should start from a new line; 
-fields should be comma-separated; the order of fields:firstname,lastname,age.
+fields should be comma-separated; the order of fields: firstname,lastname,age.
 Place the file to the `/src/main/java/resources` folder and specify the file name in the 
 `/src/main/java/resources/application.yaml` file as the value of the `source-file` setting (default is set to 
 `./init.txt`). Make sure the `enabled` setting is set to `true`.
